@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/favicon-16x16.png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="manifest" href="/src/site.webmanifest" />
+
+    <link href="../dist/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Leckerli One|Open Sans|Montserrat|DM Sans"
+    />
+    <title>Dorsy's Salon</title>
+    <script
+      src="https://kit.fontawesome.com/d06b8f2259.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../dist/jquery.min.js"></script>
+
+    <script src="../dist/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class="bg-dark text-light">
+    <div class="">
+      <nav
+        class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark text-end"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="font-family: Leckerli One, sans-serif"
+          >
+            <img
+              src="android-chrome-512x512.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top rounded"
+            />
+            Dorsy's Salon
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="font-family: DM Sans"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link sect-2" href="#sect-2">Services</a>
+              <a class="nav-link" href="https://forms.gle/V4yTieMdT3ZBQBrF7"
+                >Make an Order</a
+              >
+              <a class="nav-link sect-3" href="#sect-3">Testimonials</a>
+              <a class="nav-link" href="https://forms.gle/WSAzZboKZT5P9L7y6"
+                >Book Appointment</a
+              >
+            </div>
+
+            <ul class="nav col-md justify-content-end list-unstyled d-flex">
+              <li class="ms-3">
+                <a
+                  class="text-light"
+                  href="https://api.whatsapp.com/send/?phone=%2B233202296458&text&type=phone_number&app_absent=0"
+                  ><i class="fa-brands fa-whatsapp fa-xl"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-light"
+                  href="https://www.instagram.com/dorsy.ice/"
+                >
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-light"
+                  href="https://maps.app.goo.gl/kG4Zw3snSk21WpRN6"
+                >
+                  <i class="fa-solid fa-location-dot fa-xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="card text-bg-dark">
+        <img
+          src="https://images.unsplash.com/photo-1574015974293-817f0ebebb74?q=80&w=1573&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img lazy-img"
+          alt="..."
+        />
+        <div class="card-img-overlay">
+          <div
+            class="row justify-content-center position-absolute top-50 start-50 translate-middle text-center"
+          >
+            <div class="col-md-8">
+              <h5
+                class="card-title display-2 text-light"
+                style="font-family: Leckerli One"
+              >
+                Transform Your Hair, Transform Your Confidence.
+              </h5>
+              <!-- <p class="card-text text center mt-5">
+                <button
+                  class="btn btn-dark btn-lg"
+                  style="font-family: Open Sans,"
+                >
+                  Book an Oppointment
+                </button>
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section section--hidden" id="sect-1">
+        <div class="container text-center mb-3">
+          <div class="row align-items-center mt-5 justify-content-center">
+            <div class="col-md m-2">
+              <h1 class="display-4" style="font-family: Leckerli One">
+                Welcome to Dorsy's Salon.
+              </h1>
+              <p
+                class="fs-5 fw-medium text-light mb-3"
+                style="font-family: DM Sans"
+              >
+                We're thrilled to have you here. Prepare to embark on a journey
+                of style, creativity, and exceptional hair care. At our salon,
+                we believe that your hair is your crowning glory, and we're
+                passionate about helping you achieve the perfect look that
+                reflects your unique personality and style.We offer top-notch
+                services ensuring you leave our salon feeling confident and
+                beautiful.
+              </p>
+              <div class="text-center">
+                <a
+                  class="btn btn-outline-primary text-center mb-3"
+                  href="https://forms.gle/WSAzZboKZT5P9L7y6"
+                >
+                  Book an appointment
+                </a>
+              </div>
+            </div>
+            <div class="col-md">
+              <img
+                src="https://images.unsplash.com/photo-1616166183781-0fdd2ef83374?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="img-fluid rounded lazy-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--hidden" id="sect-2">
+        <div class="container text-center my-5">
+          <div class="row justify-content-center my-3">
+            <div class="col-md">
+              <h1 class="display-2 mb-4" style="font-family: Leckerli One">
+                Our Services
+              </h1>
+              <p style="font-family: DM Sans" class="fs-6">
+                We pride ourselves on staying up-to-date with the latest trends,
+                techniques, and beauty care routines. Whether you're looking for
+                a stylish makeover, a stunning color transformation, precise
+                styling for a special occasion, or rejuvenating treatments to
+                revitalize your locks, we've got you covered.
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-lg-5 align-items-center">
+            <div class="col-md mb-md-5">
+              <div class="mb-4">
+                <img
+                  src="https://images.unsplash.com/photo-1573617868130-7e757dbad187?q=80&w=1393&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="img-fluid rounded lazy-img"
+                  alt="..."
+                />
+                <div class="mt-2 border rounded">
+                  <p class="fw-medium fs-5 m-3" style="font-family: DM Sans">
+                    WIG CAP MAKING
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md mt-md-5">
+              <div class="">
+                <img
+                  src="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="img-fluid rounded mb-2 lazy-img"
+                  alt="..."
+                />
+                <div class="border rounded">
+                  <p class="fw-medium fs-5 m-3" style="font-family: DM Sans">
+                    NAILS
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md mb-md-5 mt-5">
+              <div class="mb-4">
+                <img
+                  src="https://images.unsplash.com/photo-1522338140262-f46f5913618a?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="img-fluid rounded lazy-img"
+                  alt="..."
+                />
+                <div class="m-2 p-2 border rounded">
+                  <p class="fw-medium fs-5" style="font-family: DM Sans">
+                    BLOW DRY
+                  </p>
+                  <p class="fw-medium fs-5" style="font-family: DM Sans">
+                    HAIR STRAIGHTENING
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md mt-3 mt-md-5">
+              <div class="mt-md-1">
+                <img
+                  src="https://images.unsplash.com/photo-1572955304332-bf714bd49add?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="img-fluid rounded lazy-img"
+                  alt="..."
+                />
+                <div class="m-2 border rounded">
+                  <p class="fw-medium fs-5" style="font-family: DM Sans">
+                    BRAIDING
+                  </p>
+                  <p class="fw-medium fs-5" style="font-family: DM Sans">
+                    SOFT LOCKS
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center mb-4"
+            style="font-family: DM Sans"
+          >
+            <div class="col-md-10 my-4">
+              Make an order to enjoy tairlored hair products that suit your
+              style such.
+            </div>
+            <div class="col-md-4">
+              <a
+                class="btn btn-outline-primary"
+                href="https://forms.gle/V4yTieMdT3ZBQBrF7"
+                >Make an order</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container my-4"></div>
+      <!-- Carousel wrapper -->
+      <section class="section section--hidden" id="sect-3">
+        <div
+          id="carouselExampleDark"
+          class="carousel slide text-center carousel-dark text-light my-5"
+        >
+          <h1 class="display-3 my-5" style="font-family: Leckerli One">
+            What Our Customers Are Saying
+          </h1>
+          <div class="carousel-inner" style="font-family: DM Sans">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                class="rounded-circle shadow-1-strong my-4 lazy-img"
+                src="https://images.unsplash.com/photo-1620794108219-aedbaded4eea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="avatar"
+                style="width: 150px"
+              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                  <h5 class="mb-3">Maria Kate</h5>
+                  <!-- <p>Photographer</p> -->
+                  <p class="text-light">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    I had an incredible experience at Dorsy's Salon. The
+                    stylists were not only highly skilled but also made sure to
+                    listen to my preferences and concerns. I left the salon
+                    feeling like a new person with a fabulous hairstyle that
+                    perfectly embodied my style. The atmosphere was welcoming
+                    and the staff was friendly and professional. I can't
+                    recommend Dorsy's Salon enough. They truly know how to make
+                    their clients feel special.
+                    <i class="fas fa-quote-right pe-2"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                class="rounded-circle shadow-1-strong mb-4 lazy-img"
+                src="https://images.unsplash.com/photo-1548772673-6477e2193bbf?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="avatar"
+                style="width: 150px"
+              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                  <h5 class="mb-3">Korkor</h5>
+                  <!-- <p>Web Developer</p> -->
+                  <p class="text-light">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    I am so grateful to have found Dorsy's Salon. The moment I
+                    stepped in, I was greeted with warmth and treated like
+                    royalty. The stylists took the time to understand my hair
+                    goals and gave me personalized recommendations. The outcome
+                    exceeded my expectations! My hair has never looked better,
+                    and the confidence boost I got is priceless. I highly
+                    recommend Dorsy's Salon for anyone looking for a top-notch
+                    salon experience.
+                    <i class="fas fa-quote-right pe-2"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="rounded-circle shadow-1-strong mb-4 lazy-img"
+                src="https://images.unsplash.com/photo-1614174568206-7620823e6aee?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="avatar"
+                style="width: 150px"
+              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                  <h5 class="mb-3">Anna Deynah</h5>
+                  <!-- <p>UX Designer</p> -->
+                  <p class="text-light">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Dorsy's Salon is my go-to salon for all my haircare needs.
+                    The team there is incredibly talented and knowledgeable.
+                    They stay updated with the latest trends and techniques,
+                    ensuring that I always leave with a fresh and stylish look.
+                    The salon's ambiance is trendy yet cozy, making each visit a
+                    relaxing and enjoyable experience. I'm consistently
+                    impressed by the level of professionalism and attention to
+                    detail. If you're looking for a salon that prioritizes
+                    customer satisfaction and delivers exceptional results, look
+                    no further than Dorsy's Salon.
+                    <i class="fas fa-quote-right pe-2"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-dark rounded p-3"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-dark rounded p-3"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Carousel wrapper -->
+
+      <hr />
+      <div class="container text-light mt-5" style="font-family: DM Sans">
+        <footer class="py-5 mt-5">
+          <div class="row text-light">
+            <div class="col-6 col-md-3">
+              <h5>Guide</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a class="nav-link p-0 sect-2" href="#sect-2">Services</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    class="nav-link p-0"
+                    href="https://forms.gle/V4yTieMdT3ZBQBrF7"
+                    >Make an Order</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link p-0 sect-3" href="#sect-3">Testimonials</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    class="nav-link p-0"
+                    href="https://forms.gle/WSAzZboKZT5P9L7y6"
+                    >Book Appointment</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <h5>Services</h5>
+              <ul class="nav flex-column text-primary">
+                <li class="nav-item mb-2">Wig Cap making</li>
+                <li class="nav-item mb-2">Nails</li>
+                <li class="nav-item mb-2">Hair straightening & Blow dry</li>
+                <li class="nav-item mb-2">Braiding & Soft locks</li>
+              </ul>
+            </div>
+
+            <div class="col-md">
+              <form id="form-send" action="/src" method="get">
+                <h5>Send us a message</h5>
+                <p>We will be glad to receive your feedback and concerns.</p>
+                <div class="">
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First name"
+                        aria-label="First name"
+                        id="firstname"
+                        required
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last name"
+                        aria-label="Last name"
+                        value=""
+                        id="lastname"
+                      />
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="name@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label"
+                      >Your message here</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="3"
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    class="btn btn-outline-primary"
+                    id="btn-send"
+                    type="submit"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p>
+              <img
+                src="apple-touch-icon.png"
+                alt=""
+                style="height: 2rem"
+                class="img-fluid m-1"
+              />
+              &copy; 2024 Dorsy's Salon. All rights reserved.
+            </p>
+
+            <ul class="nav col-md justify-content-end list-unstyled d-flex">
+              <li class="ms-3">
+                <a
+                  class="text-light"
+                  href="https://api.whatsapp.com/send/?phone=%2B233202296458&text&type=phone_number&app_absent=0"
+                  ><i class="fa-brands fa-whatsapp fa-xl"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-light"
+                  href="https://www.instagram.com/dorsy.ice/"
+                >
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-light"
+                  href="https://maps.app.goo.gl/kG4Zw3snSk21WpRN6"
+                >
+                  <i class="fa-solid fa-location-dot fa-xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- <div class="ui inverted segment" style="margin-bottom: 0px">
+  <div class="ui inverted secondary pointing menu">
+    <a class="active item"> Home </a>
+    <a class="item"> Services </a>
+    <a class="item"> Testimonials </a>
+    <a class="item"> Products </a>
+    <a class="item"> Book Appointment </a>
+    <a class="item"> Contact </a>
+  </div>
+</div> -->
